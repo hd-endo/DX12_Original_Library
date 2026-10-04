@@ -1,0 +1,20 @@
+#pragma once
+#pragma once
+#include <d3d12.h>
+#include "../Core/Handle/TexHandle.h"
+#include "../GraphicsType.h"
+
+#pragma comment(lib, "d3d12.lib")
+
+// テクスチャを張り付けたQuadを描画するためのクラス
+class DebugQuad
+{
+public:
+	void Initialize(); // 初期化
+	void Draw(ID3D12GraphicsCommandList* _cmdList); // 描画命令
+
+private:
+	VertexBuffer vertexBuffer; // ReosurceManagerが返す構造体を保持する
+	IndexBuffer indexBuffer; // インデックスバッファを保持する
+	TexHandle textureData; // 画像データ
+};

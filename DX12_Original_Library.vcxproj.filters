@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{44a1f25d-79dc-4d1d-8ce2-93b3c6f0cd6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Math">
+      <UniqueIdentifier>{f0ba6e22-4771-426c-802b-2da2d78aca68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Math\Vector">
+      <UniqueIdentifier>{0cc6ffee-426f-4a7a-b9e3-9f6050ac2889}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Math\Matrix">
+      <UniqueIdentifier>{c0d5308d-8704-4730-af23-84d05d6a429e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Math\Quaternion">
+      <UniqueIdentifier>{1a07a160-e566-4198-9b4a-ea9c72bce348}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Component">
+      <UniqueIdentifier>{ed6071d0-dc70-4f47-9f75-e4a1d5b95f0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Graphics">
+      <UniqueIdentifier>{ac980da8-65df-414c-92b8-cbd1499a075a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Shaders">
+      <UniqueIdentifier>{089b40b5-9882-4b43-8472-da62484e9438}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Input">
+      <UniqueIdentifier>{fca35b9b-1a6e-4f77-9191-f2684bb4710f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Facade">
+      <UniqueIdentifier>{b1eee5cb-29ef-4f3d-b2cf-32bce221a04b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Window">
+      <UniqueIdentifier>{2fbab711-088e-4da9-b746-ee223ade2476}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Facade\Exturnal">
+      <UniqueIdentifier>{7053992d-81eb-4d55-ac45-51fdfba2310e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Core">
+      <UniqueIdentifier>{d3302b33-94aa-429d-b0a7-e3a3588bd10f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Core\Handle">
+      <UniqueIdentifier>{3f632514-98c2-4ddc-b53f-66f606e698d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Debug">
+      <UniqueIdentifier>{bcbb2943-5265-438b-8294-19078d92d994}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Sound">
+      <UniqueIdentifier>{5bcc2202-caed-482d-9159-06005162a0d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Collision">
+      <UniqueIdentifier>{77a055a2-e327-4937-99a0-94da2116e416}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\FPS">
+      <UniqueIdentifier>{718ef046-6ae7-4b59-aa27-4ce2264c5575}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Graphics\InternalResource">
+      <UniqueIdentifier>{2db4ea0c-db4f-48e0-8351-e335a35e7fb6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\Math\MathConstant.h">
+      <Filter>Src\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Math\Vector\Vector2.h">
+      <Filter>Src\Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Math\Vector\Vector2Int.h">
+      <Filter>Src\Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Math\Vector\Vector3.h">
+      <Filter>Src\Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Math\Vector\Vector3Int.h">
+      <Filter>Src\Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Math\Vector\Vector4.h">
+      <Filter>Src\Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Math\Matrix\Mat4x4.h">
+      <Filter>Src\Math\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Math\Quaternion\Quaternion.h">
+      <Filter>Src\Math\Quaternion</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Math\TSMath.h">
+      <Filter>Src\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Graphics\GraphicsDevice.h">
+      <Filter>Src\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Graphics\GraphicsConstant.h">
+      <Filter>Src\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Component\Transform.h">
+      <Filter>Src\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Graphics\DescriptorManager.h">
+      <Filter>Src\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Graphics\GraphicsType.h">
+      <Filter>Src\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Graphics\ShaderSystem.h">
+      <Filter>Src\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Graphics\GraphicsResourceManager.h">
+      <Filter>Src\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Input\KeyboardInput.h">
+      <Filter>Src\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Input\InputName.h">
+      <Filter>Src\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Input\InputBase.h">
+      <Filter>Src\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Input\InputConstant.h">
+      <Filter>Src\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Facade\Gfx.h">
+      <Filter>Src\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Facade\Input.h">
+      <Filter>Src\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Facade\TSLib.h">
+      <Filter>Src\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Facade\GfxInternal.h">
+      <Filter>Src\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Facade\InputInternal.h">
+      <Filter>Src\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Window\Window.h">
+      <Filter>Src\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Graphics\SpriteBatch.h">
+      <Filter>Src\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Graphics\RingConstantBuffer.h">
+      <Filter>Src\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Core\Handle\TexHandle.h">
+      <Filter>Src\Core\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Debug\DebugLogs.h">
+      <Filter>Src\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Math\Vector\Vector2Format.h">
+      <Filter>Src\Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Math\Vector\Vector2IntFormat.h">
+      <Filter>Src\Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Math\Vector\Vector3Format.h">
+      <Filter>Src\Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Math\Vector\Vector3IntFormat.h">
+      <Filter>Src\Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Math\Vector\Vector4Format.h">
+      <Filter>Src\Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Math\Matrix\Mat4x4Format.h">
+      <Filter>Src\Math\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Math\Quaternion\QuaternionFormat.h">
+      <Filter>Src\Math\Quaternion</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Graphics\GPUMarker.h">
+      <Filter>Src\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\External\cgltf.h">
+      <Filter>Src\Facade\Exturnal</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Core\Handle\ModelHandle.h">
+      <Filter>Src\Core\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Graphics\ShapeBatch.h">
+      <Filter>Src\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Input\GamePadInput.h">
+      <Filter>Src\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Input\MouseInput.h">
+      <Filter>Src\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Input\ActionSystem.h">
+      <Filter>Src\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Facade\Sound.h">
+      <Filter>Src\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Facade\SoundInternal.h">
+      <Filter>Src\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Sound\SoundSystem.h">
+      <Filter>Src\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Core\Handle\SoundHandle.h">
+      <Filter>Src\Core\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Sound\SoundType.h">
+      <Filter>Src\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Sound\SoundConstant.h">
+      <Filter>Src\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Sound\SoundResourceManager.h">
+      <Filter>Src\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Collision\CollisionSystem.h">
+      <Filter>Src\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Collision\Collider.h">
+      <Filter>Src\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Facade\Collision.h">
+      <Filter>Src\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\FPS\FPSSystem.h">
+      <Filter>Src\FPS</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\FPS\FPSConstant.h">
+      <Filter>Src\FPS</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\FPS\FPSCounter.h">
+      <Filter>Src\FPS</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\FPS\FPSLimiter.h">
+      <Filter>Src\FPS</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Facade\TSTime.h">
+      <Filter>Src\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Facade\TimeInternal.h">
+      <Filter>Src\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Core\Handle\RTHandle.h">
+      <Filter>Src\Core\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Core\Handle\ShaderHandle.h">
+      <Filter>Src\Core\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Core\Handle\MaterialHandle.h">
+      <Filter>Src\Core\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Core\TextEncoding.h">
+      <Filter>Src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Graphics\GfxType.h">
+      <Filter>Src\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Core\Handle\HandlePassKey.h">
+      <Filter>Src\Core\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Core\Handle\HandlePacking.h">
+      <Filter>Src\Core\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Graphics\InternalResource\DefaultFontData.h">
+      <Filter>Src\Graphics\InternalResource</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\Math\Vector\Vector2.cpp">
+      <Filter>Src\Math\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Math\Vector\Vector2Int.cpp">
+      <Filter>Src\Math\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Math\Vector\Vector3.cpp">
+      <Filter>Src\Math\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Math\Vector\Vector3Int.cpp">
+      <Filter>Src\Math\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Math\Vector\Vector4.cpp">
+      <Filter>Src\Math\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Math\Matrix\Mat4x4.cpp">
+      <Filter>Src\Math\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Math\Quaternion\Quaternion.cpp">
+      <Filter>Src\Math\Quaternion</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Graphics\GraphicsDevice.cpp">
+      <Filter>Src\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Component\Transform.cpp">
+      <Filter>Src\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Graphics\ShaderSystem.cpp">
+      <Filter>Src\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Graphics\GraphicsResourceManager.cpp">
+      <Filter>Src\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Input\KeyboardInput.cpp">
+      <Filter>Src\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Facade\Gfx.cpp">
+      <Filter>Src\Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Facade\Input.cpp">
+      <Filter>Src\Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Facade\TSLib.cpp">
+      <Filter>Src\Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Window\Window.cpp">
+      <Filter>Src\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Graphics\SpriteBatch.cpp">
+      <Filter>Src\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Graphics\RingConstantBuffer.cpp">
+      <Filter>Src\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Debug\DebugLogs.cpp">
+      <Filter>Src\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Graphics\GPUMarker.cpp">
+      <Filter>Src\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\External\CgltfEnable.cpp">
+      <Filter>Src\Facade\Exturnal</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Graphics\ShapeBatch.cpp">
+      <Filter>Src\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Input\GamePadInput.cpp">
+      <Filter>Src\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Input\MouseInput.cpp">
+      <Filter>Src\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Input\ActionSystem.cpp">
+      <Filter>Src\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Facade\Sound.cpp">
+      <Filter>Src\Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Sound\SoundSystem.cpp">
+      <Filter>Src\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Sound\SoundResourceManager.cpp">
+      <Filter>Src\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Graphics\DescriptorManager.cpp">
+      <Filter>Src\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Collision\CollisionSystem.cpp">
+      <Filter>Src\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Facade\Collision.cpp">
+      <Filter>Src\Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\FPS\FPSSystem.cpp">
+      <Filter>Src\FPS</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\FPS\FPSLimiter.cpp">
+      <Filter>Src\FPS</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\FPS\FPSCounter.cpp">
+      <Filter>Src\FPS</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Facade\TSTime.cpp">
+      <Filter>Src\Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Core\TextEncoding.cpp">
+      <Filter>Src\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Graphics\InternalResource\DefaultFontData.cpp">
+      <Filter>Src\Graphics\InternalResource</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Src\Shaders\TexturePS.hlsl">
+      <Filter>Src\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Src\Shaders\TextureVS.hlsl">
+      <Filter>Src\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Src\Shaders\ModelVS.hlsl">
+      <Filter>Src\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Src\Shaders\ModelPS.hlsl">
+      <Filter>Src\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Src\Shaders\ShapeVS.hlsl">
+      <Filter>Src\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Src\Shaders\ShapePS.hlsl">
+      <Filter>Src\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Src\Shaders\TerrainVS.hlsl">
+      <Filter>Src\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Src\Shaders\TerrainPS.hlsl">
+      <Filter>Src\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Src\Shaders\TerrainHS.hlsl">
+      <Filter>Src\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Src\Shaders\TerrainDS.hlsl">
+      <Filter>Src\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Src\Shaders\PostEffectVS.hlsl">
+      <Filter>Src\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Src\Shaders\PostEffectPS.hlsl">
+      <Filter>Src\Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Src\Shaders\Terrain.hlsli">
+      <Filter>Src\Shaders</Filter>
+    </None>
+    <None Include="Src\Shaders\PostEffectContract.hlsli">
+      <Filter>Src\Shaders</Filter>
+    </None>
+    <None Include="Src\Shaders\SpriteContract.hlsli">
+      <Filter>Src\Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

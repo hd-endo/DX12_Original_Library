@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{52cb1240-45e6-4b46-88fa-14088c51322a}</ProjectGuid>
+    <RootNamespace>DX12OriginalLibrary</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>
+       $(IntDir);$(ProjectDir)Src\Math\;$(SolutionDir)Src\External\DirextXTex\;%(AdditionalIncludeDirectories)
+      </AdditionalIncludeDirectories>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>
+       $(IntDir);$(ProjectDir)Src\Math\;$(SolutionDir)Src\External\DirextXTex\;%(AdditionalIncludeDirectories)
+      </AdditionalIncludeDirectories>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>
+       $(IntDir);$(ProjectDir)Src\Math\;$(SolutionDir)Src\External\DirextXTex\;%(AdditionalIncludeDirectories)
+      </AdditionalIncludeDirectories>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>
+       $(IntDir);$(ProjectDir)Src\Math\;$(SolutionDir)Src\External\DirextXTex\;%(AdditionalIncludeDirectories)
+      </AdditionalIncludeDirectories>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <FxCompile>
+      <!-- 全内蔵Shader共通設定 -->
+      <ShaderModel>5.0</ShaderModel>
+      <EntryPointName>main</EntryPointName>
+      <!-- HLSL名から生成ファイル名と変数名を自動生成する -->
+      <HeaderFileOutput>$(IntDir)%(Filename)Bytecode.h</HeaderFileOutput>
+      <VariableName>g_%(Filename)</VariableName>
+      <ObjectFileOutput>$(IntDir)%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\Collision\Collider.h" />
+    <ClInclude Include="Src\Collision\CollisionSystem.h" />
+    <ClInclude Include="Src\Component\Transform.h" />
+    <ClInclude Include="Src\Core\Handle\HandlePacking.h" />
+    <ClInclude Include="Src\Core\Handle\HandlePassKey.h" />
+    <ClInclude Include="Src\Core\Handle\MaterialHandle.h" />
+    <ClInclude Include="Src\Core\Handle\ModelHandle.h" />
+    <ClInclude Include="Src\Core\Handle\RTHandle.h" />
+    <ClInclude Include="Src\Core\Handle\ShaderHandle.h" />
+    <ClInclude Include="Src\Core\Handle\SoundHandle.h" />
+    <ClInclude Include="Src\Core\Handle\TexHandle.h" />
+    <ClInclude Include="Src\Core\TextEncoding.h" />
+    <ClInclude Include="Src\Debug\DebugLogs.h" />
+    <ClInclude Include="Src\External\cgltf.h" />
+    <ClInclude Include="Src\Facade\Collision.h" />
+    <ClInclude Include="Src\Facade\Gfx.h" />
+    <ClInclude Include="Src\Facade\GfxInternal.h" />
+    <ClInclude Include="Src\Facade\Input.h" />
+    <ClInclude Include="Src\Facade\InputInternal.h" />
+    <ClInclude Include="Src\Facade\Sound.h" />
+    <ClInclude Include="Src\Facade\SoundInternal.h" />
+    <ClInclude Include="Src\Facade\TSTime.h" />
+    <ClInclude Include="Src\Facade\TimeInternal.h" />
+    <ClInclude Include="Src\Facade\TSLib.h" />
+    <ClInclude Include="Src\FPS\FPSConstant.h" />
+    <ClInclude Include="Src\FPS\FPSLimiter.h" />
+    <ClInclude Include="Src\FPS\FPSSystem.h" />
+    <ClInclude Include="Src\FPS\FPSCounter.h" />
+    <ClInclude Include="Src\Graphics\DescriptorManager.h" />
+    <ClInclude Include="Src\Graphics\GfxType.h" />
+    <ClInclude Include="Src\Graphics\GPUMarker.h" />
+    <ClInclude Include="Src\Graphics\GraphicsConstant.h" />
+    <ClInclude Include="Src\Graphics\GraphicsDevice.h" />
+    <ClInclude Include="Src\Graphics\GraphicsType.h" />
+    <ClInclude Include="Src\Graphics\GraphicsResourceManager.h" />
+    <ClInclude Include="Src\Graphics\InternalResource\DefaultFontData.h" />
+    <ClInclude Include="Src\Graphics\RingConstantBuffer.h" />
+    <ClInclude Include="Src\Graphics\ShaderSystem.h" />
+    <ClInclude Include="Src\Graphics\ShapeBatch.h" />
+    <ClInclude Include="Src\Graphics\SpriteBatch.h" />
+    <ClInclude Include="Src\Input\ActionSystem.h" />
+    <ClInclude Include="Src\Input\InputBase.h" />
+    <ClInclude Include="Src\Input\InputConstant.h" />
+    <ClInclude Include="Src\Input\GamePadInput.h" />
+    <ClInclude Include="Src\Input\InputName.h" />
+    <ClInclude Include="Src\Input\KeyboardInput.h" />
+    <ClInclude Include="Src\Input\MouseInput.h" />
+    <ClInclude Include="Src\Math\MathConstant.h" />
+    <ClInclude Include="Src\Math\Matrix\Mat4x4.h" />
+    <ClInclude Include="Src\Math\Matrix\Mat4x4Format.h" />
+    <ClInclude Include="Src\Math\Quaternion\Quaternion.h" />
+    <ClInclude Include="Src\Math\Quaternion\QuaternionFormat.h" />
+    <ClInclude Include="Src\Math\TSMath.h" />
+    <ClInclude Include="Src\Math\Vector\Vector2.h" />
+    <ClInclude Include="Src\Math\Vector\Vector2Format.h" />
+    <ClInclude Include="Src\Math\Vector\Vector2Int.h" />
+    <ClInclude Include="Src\Math\Vector\Vector2IntFormat.h" />
+    <ClInclude Include="Src\Math\Vector\Vector3.h" />
+    <ClInclude Include="Src\Math\Vector\Vector3Format.h" />
+    <ClInclude Include="Src\Math\Vector\Vector3Int.h" />
+    <ClInclude Include="Src\Math\Vector\Vector3IntFormat.h" />
+    <ClInclude Include="Src\Math\Vector\Vector4.h" />
+    <ClInclude Include="Src\Math\Vector\Vector4Format.h" />
+    <ClInclude Include="Src\Sound\SoundConstant.h" />
+    <ClInclude Include="Src\Sound\SoundResourceManager.h" />
+    <ClInclude Include="Src\Sound\SoundSystem.h" />
+    <ClInclude Include="Src\Sound\SoundType.h" />
+    <ClInclude Include="Src\Window\Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\Collision\CollisionSystem.cpp" />
+    <ClCompile Include="Src\Component\Transform.cpp" />
+    <ClCompile Include="Src\Core\TextEncoding.cpp" />
+    <ClCompile Include="Src\Debug\DebugLogs.cpp" />
+    <ClCompile Include="Src\External\CgltfEnable.cpp" />
+    <ClCompile Include="Src\Facade\Collision.cpp" />
+    <ClCompile Include="Src\Facade\Gfx.cpp" />
+    <ClCompile Include="Src\Facade\Input.cpp" />
+    <ClCompile Include="Src\Facade\Sound.cpp" />
+    <ClCompile Include="Src\Facade\TSTime.cpp" />
+    <ClCompile Include="Src\Facade\TSLib.cpp" />
+    <ClCompile Include="Src\FPS\FPSCounter.cpp" />
+    <ClCompile Include="Src\FPS\FPSLimiter.cpp" />
+    <ClCompile Include="Src\FPS\FPSSystem.cpp" />
+    <ClCompile Include="Src\Graphics\DescriptorManager.cpp" />
+    <ClCompile Include="Src\Graphics\GPUMarker.cpp" />
+    <ClCompile Include="Src\Graphics\GraphicsDevice.cpp" />
+    <ClCompile Include="Src\Graphics\GraphicsResourceManager.cpp" />
+    <ClCompile Include="Src\Graphics\InternalResource\DefaultFontData.cpp" />
+    <ClCompile Include="Src\Graphics\RingConstantBuffer.cpp" />
+    <ClCompile Include="Src\Graphics\ShaderSystem.cpp" />
+    <ClCompile Include="Src\Graphics\ShapeBatch.cpp" />
+    <ClCompile Include="Src\Graphics\SpriteBatch.cpp" />
+    <ClCompile Include="Src\Input\ActionSystem.cpp" />
+    <ClCompile Include="Src\Input\GamePadInput.cpp" />
+    <ClCompile Include="Src\Input\KeyboardInput.cpp" />
+    <ClCompile Include="Src\Input\MouseInput.cpp" />
+    <ClCompile Include="Src\Math\Matrix\Mat4x4.cpp" />
+    <ClCompile Include="Src\Math\Quaternion\Quaternion.cpp" />
+    <ClCompile Include="Src\Math\Vector\Vector2.cpp" />
+    <ClCompile Include="Src\Math\Vector\Vector2Int.cpp" />
+    <ClCompile Include="Src\Math\Vector\Vector3.cpp" />
+    <ClCompile Include="Src\Math\Vector\Vector3Int.cpp" />
+    <ClCompile Include="Src\Math\Vector\Vector4.cpp" />
+    <ClCompile Include="Src\Sound\SoundResourceManager.cpp" />
+    <ClCompile Include="Src\Sound\SoundSystem.cpp" />
+    <ClCompile Include="Src\Window\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Src\Shaders\ModelPS.hlsl">
+      <ShaderType>Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Src\Shaders\ModelVS.hlsl">
+      <ShaderType>Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Src\Shaders\PostEffectPS.hlsl">
+      <ShaderType>Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Src\Shaders\PostEffectVS.hlsl">
+      <ShaderType>Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Src\Shaders\ShapePS.hlsl">
+      <ShaderType>Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Src\Shaders\ShapeVS.hlsl">
+      <ShaderType>Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Src\Shaders\TerrainDS.hlsl">
+      <ShaderType>Domain</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Src\Shaders\TerrainHS.hlsl">
+      <ShaderType>Hull</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Src\Shaders\TerrainPS.hlsl">
+      <ShaderType>Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Src\Shaders\TerrainVS.hlsl">
+      <ShaderType>Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Src\Shaders\TexturePS.hlsl">
+      <ShaderType>Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Src\Shaders\TextureVS.hlsl">
+      <ShaderType>Vertex</ShaderType>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Src\Shaders\PostEffectContract.hlsli">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="Src\Shaders\SpriteContract.hlsli">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="Src\Shaders\Terrain.hlsli">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
